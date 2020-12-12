@@ -16,8 +16,9 @@ namespace RxCocoaSharp {
                 h => scene.OnUpdate += h,
                 h => scene.OnUpdate -= h);
 
-        public static IObservable<System.Reactive.Unit> ObservableClick(this IOnClickHandler btn) =>
-            Observable.FromEvent(
+        public static IObservable<NSEvent> ObservableClick(this IOnClickHandler btn) =>
+            Observable.FromEvent<NSEventHandler, NSEvent>(
+                h => (e) => h(e),
                 h => btn.OnClick += h,
                 h => btn.OnClick -= h);
 

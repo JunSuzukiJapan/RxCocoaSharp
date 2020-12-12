@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Reactive.Linq;
 using AppKit;
+using Foundation;
 using SpriteKit;
 
 namespace RxCocoaSharp {
@@ -36,6 +37,26 @@ namespace RxCocoaSharp {
         public event NSEventHandler OnQuickLook;
         public event NSEventHandler OnFlagsChanged;
         public event NSEventHandler OnChangeMode;
+
+        public RxSKLabelNode() : base() { }
+        public RxSKLabelNode(string fontName) : base(fontName) {}
+
+        public static new RxSKLabelNode FromFont(string fontName) {
+            var node = new RxSKLabelNode(fontName);
+            return node;
+        }
+
+        public static new RxSKLabelNode FromText(string text){
+            var node = new RxSKLabelNode();
+            node.Text = text;
+            return node;
+        }
+
+        public static new RxSKLabelNode FromText(NSAttributedString attrText) {
+            var node = new RxSKLabelNode();
+            node.AttributedText = attrText;
+            return node;
+        }
 
         public override void MouseDown(NSEvent theEvent) {
             base.MouseDown(theEvent);

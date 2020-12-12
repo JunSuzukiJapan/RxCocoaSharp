@@ -43,6 +43,42 @@ namespace RxCocoaSharp {
             mTextFieldDelegate = new RxTextFieldDelegate(this);
         }
 
+        public static new RxNSTextField CreateTextField(string text) {
+            var field = new RxNSTextField();
+            field.Editable = true;
+            field.Selectable = true;
+            field.PlaceholderString = text;
+
+            return field;
+        }
+
+        public static new RxNSTextField CreateLabel(string text) {
+            var field = new RxNSTextField();
+            field.Editable = false;
+            field.Selectable = false;
+            field.PlaceholderString = text;
+
+            return field;
+        }
+
+        public static new RxNSTextField CreateLabel(NSAttributedString attrText) {
+            var field = new RxNSTextField();
+            field.Editable = false;
+            field.Selectable = false;
+            field.PlaceholderAttributedString = attrText;
+
+            return field;
+        }
+
+        public static new RxNSTextField CreateWrappingLabel(string text) {
+            var field = new RxNSTextField();
+            field.Editable = false;
+            field.Selectable = true;
+            field.PlaceholderString = text;
+
+            return field;
+        }
+
         internal class RxTextFieldDelegate : NSTextFieldDelegate {
             RxNSTextField field;
 

@@ -2,6 +2,6 @@
 
 namespace RxCocoaSharp {
     public interface IOnClickHandler {
-        event Action OnClick;
+        event NSEventHandler OnClick;
     }
 }

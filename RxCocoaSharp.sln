@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RxCocoaSharp", "RxCocoaSharp\RxCocoaSharp.csproj", "{2C52A6C3-6C1E-4AFC-A93A-D5C4B2B2312A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleSpriteKit", "ExampleSpriteKit\ExampleSpriteKit.csproj", "{617CE15A-945A-43FB-84DF-1EB652824FCF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,5 +15,9 @@ Global
 		{2C52A6C3-6C1E-4AFC-A93A-D5C4B2B2312A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C52A6C3-6C1E-4AFC-A93A-D5C4B2B2312A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C52A6C3-6C1E-4AFC-A93A-D5C4B2B2312A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{617CE15A-945A-43FB-84DF-1EB652824FCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{617CE15A-945A-43FB-84DF-1EB652824FCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{617CE15A-945A-43FB-84DF-1EB652824FCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{617CE15A-945A-43FB-84DF-1EB652824FCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

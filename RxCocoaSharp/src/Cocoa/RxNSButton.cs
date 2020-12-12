@@ -4,7 +4,7 @@ using AppKit;
 namespace RxCocoaSharp {
     public class RxNSButton : NSButton, IEventHandler, IOnClickHandler {
         // interface IOnClickHandler
-        public event Action OnClick;
+        public event NSEventHandler OnClick;
 
         //
         // interface IEventHandler
@@ -50,7 +50,7 @@ namespace RxCocoaSharp {
                 OnMouseDown(theEvent);
             }
             if (OnClick != null) {
-                OnClick();
+                OnClick(theEvent);
             }
         }
 
