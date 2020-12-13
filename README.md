@@ -108,10 +108,36 @@ namespace ExampleSpriteKit {
 - ObservableRightMouseDragged
 - ObservableOtherMouseDragged
 
+### RxNSTextField & RxNSTextView
+
+- ObservableDidTextChange
+
 ### RxSKScene Only
 
 - ObservableUpdate
 
-### RxNSTextField & RxNSTextView
+example:
 
-- ObservableDidTextChange
+```
+using System;
+using SpriteKit;
+
+using System.Reactive.Linq;
+using RxCocoaSharp;
+
+namespace ExampleSpriteKit {
+    public class GameScene : RxSKScene {
+        public GameScene(IntPtr handle) : base(handle) {
+        }
+
+        public override void DidMoveToView(SKView view) {
+            int count = 0;
+            this.ObservableUpdate()
+                .Subscribe(e => {
+                    count++;
+                    Console.WriteLine("Update called {0} times.", count);
+                });
+        }
+    }
+}
+```
