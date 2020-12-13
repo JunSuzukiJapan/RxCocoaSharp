@@ -95,4 +95,23 @@ namespace ExampleSpriteKit {
 |SKVideoNode|RxSKVideoNode|
 |SKView|RxSKView|
 
+## Observables
 
+### All Rx** class
+
+- ObservableClick
+- ObservableKeyDown
+- ObservableMouseClick
+- ObservableRightMouseClick
+- ObservableOtherMouseClick
+- ObservableMouseDragged
+- ObservableRightMouseDragged
+- ObservableOtherMouseDragged
+
+### RxSKScene Only
+
+- ObservableUpdate
+
+### RxNSTextField & RxNSTextView
+
+- ObservableDidTextChange
