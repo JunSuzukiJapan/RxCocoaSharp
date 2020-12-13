@@ -74,3 +74,25 @@ namespace ExampleSpriteKit {
 }
 ```
 
+# Appendix
+
+## Classes
+
+|Original|RxCocoaSharp|
+---|---
+|NSButton|RxNSButton  |
+|NSSlider|RxNSSlider  |
+|NSTextField|RxNSTextField|
+|NSTextView|RxNSTextView|
+|NSWindow|RxNSWindow|
+|SKCropNode|RxSKCropNode|
+|SKEffectNode|RxSKEffectNode|
+|SKLabelNode|RxSKLabelNode|
+|SKNode|RxSKNode|
+|SKScene|RxSKScene|
+|SKShapeNode|RxSKShapeNode|
+|SKSpriteNode|RxSKSpriteNode|
+|SKVideoNode|RxSKVideoNode|
+|SKView|RxSKView|
+
+
